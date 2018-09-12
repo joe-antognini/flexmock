@@ -236,7 +236,7 @@ class Expectation(object):
   def __getattr__(self, name):
     self.__raise(
         AttributeError,
-        "'%s' object has not attribute '%s'" % (self.__class__.__name__, name))
+        "'%s' object has no attribute '%s'" % (self.__class__.__name__, name))
 
   def _get_runnable(self):
     """Ugly hack to get the name of when() condition from the source code."""
